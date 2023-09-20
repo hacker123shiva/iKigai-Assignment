@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base href="www.google.com" />
+    <meta name="description" content="a basic html page" />
+    <meta name="keyword" content="html, css, javascript" />
+    <meta name="author" content="shiva" />
+    <meta name="robots" content="noindex,nofollow" />
+    <meta name="viewport" content="width=device=width, intial-scale=1.0" />
+    <title>html tags</title>
+  </head>
+  <body bgcolor="lightgreen" text="navy">
+    <font size="10" fontspace="">
+      <h1>HTML Tags Demo</h1>
+    </font>
+    <fieldset align="center">
+      <legend>
+        <hr size="5" color="navy" />
+        <h2>Registration form</h2>
+      </legend>
+      <hr size="5" color="navy" />
+      <form method="post" action="gla.ac.in">
+        <table align="center" border="4" width="30%">
+          <tr>
+            <th><label>UserId</label></th>
+            <td>
+              <input type="text" name="userId" value="User101" readonly />
+            </td>
+          </tr>
+          <tr>
+            <th><label>Name</label></th>
+            <td>
+              <input
+                type="text"
+                name="name"
+                required
+                placeholder="enter name"
+                oninvalid="setCustomValidity('name required')"
+                oninput="setCustomValidity('')"
+                maxlength="10"
+              />
+            </td>
+          </tr>
+          <tr>
+            <th><label>Password</label></th>
+            <td>
+              <input
+                type="password"
+                name="password"
+                required
+                placeholder="******"
+                oninvalid="setCustomValidity('password required')"
+                oninput="setCustomValidity('')"
+                autofocus
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <th><label>Email</label></th>
+            <td>
+              <input type="email" name="email" />
+            </td>
+          </tr>
+
+          <tr>
+            <th><label>Contact Number</label></th>
+            <td>
+              <input type="number" name="number" pattern="[0-9]{10}" />
+            </td>
+          </tr>
+
+          <tr>
+            <th>
+              <input type="submit" value="Submit" name="submit" />
+              <input
+                type="submit"
+                name="vsubmit"
+                value="vsubmit"
+                formnovalidate
+              />
+            </th>
+            <th><input type="reset" value="Reset" /></th>
+          </tr>
+        </table>
+      </form>
+    </fieldset>
+  </body>
+</html>

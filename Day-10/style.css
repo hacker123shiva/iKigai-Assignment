@@ -1,0 +1,89 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: 0;
+}
+
+nav ul {
+  list-style: none;
+  float: right;
+}
+
+ul li {
+  float: left;
+}
+
+nav a {
+  display: block;
+  padding: 1em 1.5em;
+  color: rgb(15, 15, 15);
+  padding: 0.5 rem 0.1rem;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: rgb(243, 241, 241);
+  color: red;
+  box-shadow: 2px 3px 4px 5px rgb(47, 139, 72);
+}
+header {
+  /* background-color: #123; */
+  background: #123 url('dheeraj.jpg') no-repeat center/cover;
+  color: #09d066;
+  text-align: center;
+  font-family: cursive;
+  /* Depend on content */
+  /* height: 100%; */
+  /* Depend on ViewPort height and width */
+  height: 100vh;
+}
+
+header h1 {
+  padding-top: 13rem;
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px red;
+}
+
+header p {
+  padding: 2rem;
+}
+
+header a {
+  /* display: block; */
+  display: inline-block;
+  background-color: #fff;
+  color: black;
+  padding: 0.5rem 1.5rem;
+  border-radius: 10%;
+  text-decoration: none;
+}
+
+header a:hover {
+  box-shadow: 2px 2px 4px 3px red;
+}
+
+section {
+  padding: 2rem;
+}
+
+@media (max-width: 500px) {
+  header h1 {
+    padding-top: 9rem;
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px red;
+  }
+
+  header p {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  nav a {
+    display: block;
+    padding: 0.5em 0.1em;
+    color: rgb(15, 15, 15);
+
+    text-decoration: none;
+  }
+}

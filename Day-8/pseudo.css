@@ -1,0 +1,33 @@
+p::first-letter {
+  color: brown;
+  font-size: 100px;
+  font-family: jokerman;
+}
+
+li::first-letter {
+  color: rgb(165, 42, 130);
+  font-size: 100px;
+  font-family: jokerman;
+}
+
+::selection {
+  background-color: burlywood;
+}
+
+::placeholder {
+  color: red;
+  background-color: blanchedalmond;
+}
+
+/* apply to h1, p, pre... */
+h1::before {
+  content: 'this is html and css ';
+}
+
+h1::after {
+  content: ' demo';
+}
+
+div::after {
+  content: '@#$^&';
+}

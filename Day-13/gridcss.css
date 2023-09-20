@@ -1,0 +1,18 @@
+.container {
+  display: grid;
+  grid-template-columns: 200px 400px 300px 40px;
+  grid-template-rows: auto auto auto auto;
+  /* justify-content: space-around; */
+  /* align-content: center; */
+  height: 100vh;
+}
+
+.container > * {
+  background-color: bisque;
+  border: 2px solid black;
+}
+
+.item-1 {
+  background-color: blueviolet;
+  grid-area: 1/2/3/4;
+}

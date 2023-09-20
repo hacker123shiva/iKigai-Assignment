@@ -1,0 +1,16 @@
+.navbar {
+  border-bottom: 5px solid blue;
+}
+
+.body {
+  background: linear-gradient(to right bottom, rgb(101, 18, 131), green, blue);
+}
+
+.card {
+  height: 300px;
+}
+
+.card img {
+  width: 40%;
+  border-radius: 50%;
+}

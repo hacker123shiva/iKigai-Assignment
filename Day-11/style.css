@@ -1,0 +1,28 @@
+.container {
+  border: 2px solid red;
+
+  width: 1000px;
+  height: 5000px;
+  text-align: center;
+  /* display: float; */
+}
+
+.container > * {
+  float: left;
+  padding: 2rem;
+  background-color: aquamarine;
+  color: red;
+  font-size: 2rem;
+  border: 2px solid yellow;
+}
+.col1 {
+  position: fixed;
+  top: 10px;
+  left: 30px;
+}
+
+.col3 {
+  position: sticky;
+  top: 10px;
+  bottom: 100px;
+}

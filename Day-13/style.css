@@ -1,0 +1,30 @@
+.container {
+  display: grid;
+  grid-template-areas:
+    'h h h h . . '
+    'm m c c c c'
+    'm m c c c c'
+    'f f f f f f';
+  text-align: center;
+  height: 100vh;
+}
+
+.header {
+  background-color: antiquewhite;
+  grid-area: h;
+}
+
+.menu {
+  background-color: aquamarine;
+  grid-area: m;
+}
+
+.content {
+  background-color: burlywood;
+  grid-area: c;
+}
+
+.footer {
+  background-color: darkolivegreen;
+  grid-area: f;
+}

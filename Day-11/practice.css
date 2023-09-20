@@ -1,0 +1,30 @@
+.container {
+  background-color: aquamarine;
+  border: 2px solid red;
+  text-align: center;
+  display: flex;
+  /* width: 405px; */
+  /* flex-wrap: wrap; */
+  flex-direction: row;
+  /* justify-content: start; */
+  /* align-items: end; */
+  /* align-content: center; */
+  height: 300px;
+  row-gap: 20px;
+  column-gap: 30px;
+}
+
+.container > * {
+  border: 2px solid black;
+  /* height: 50px; */
+  width: 100px;
+}
+
+.col1 {
+  /* flex-basis: 100%; */
+  flex-shrink: 2;
+}
+
+.col2 {
+  flex-shrink: 3;
+}

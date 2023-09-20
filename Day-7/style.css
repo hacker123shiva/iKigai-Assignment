@@ -1,0 +1,35 @@
+* {
+  font: 20px jokerman;
+  background-color: lightgreen;
+}
+
+/* Type selector */
+/* Use of Coma to separeate class */
+input,
+textarea {
+  border: 2px solid red;
+  background-color: antiquewhite;
+}
+
+.borderclass {
+  background-color: rgb(255, 0, 225);
+  color: red;
+}
+
+/* child selector */
+select > option {
+  color: burlywood;
+}
+
+/* descendent selector */
+select option {
+  background-color: blue;
+}
+
+/*attribute exact selection  */
+input[type='text'] {
+  background-color: brown;
+}
+
+input[src='con'] {
+}

@@ -1,0 +1,29 @@
+.container {
+  display: grid;
+  background-color: aquamarine;
+  grid-template-rows: repeat(12, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  border: 2px solid red;
+  height: 100vh;
+}
+
+.container > * {
+  border: 2px solid red;
+}
+.header {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.menu {
+  grid-row: 2/8;
+}
+.content {
+  grid-column: 2/-1;
+}
+.footer {
+  /* grid-column-start: 1;
+  grid-column-end: 3; */
+
+  grid-column: 1/-1;
+}

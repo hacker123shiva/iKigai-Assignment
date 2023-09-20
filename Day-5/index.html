@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base href="www.google.com" />
+    <meta name="description" content="a basic html page" />
+    <meta name="keyword" content="html, css, javascript" />
+    <meta name="author" content="shiva" />
+    <meta name="robots" content="noindex,nofollow" />
+    <meta name="viewport" content="width=device=width, intial-scale=1.0" />
+    <title>html tags</title>
+    <title>HTML Tags</title>
+  </head>
+  <body bgcolor="lightgreen" text="navy">
+    <h1 align="center">HTML Tags Demo</h1>
+    <fieldset>
+      <legend align="center">
+        <hr size="5" color="navy" />
+        <h2>Registration form</h2>
+        <hr size="5" color="navy" />
+      </legend>
+
+      <form
+        method="post"
+        action="http://gla.ac.in"
+        enctype="multipart/form-data"
+      >
+        <table align="center" border="4" width="30%">
+          <tr>
+            <th><label>UserId</label></th>
+            <td>
+              <input type="text" name="userId" value="User101" readonly />
+            </td>
+          </tr>
+          <tr>
+            <th><label>Name</label></th>
+            <td>
+              <input
+                type="text"
+                name="name"
+                required
+                placeholder="enter name"
+                oninvalid="setCustomValidity('name required')"
+                oninput="setCustomValidity('')"
+                maxlength="10"
+              />
+            </td>
+          </tr>
+          <tr>
+            <th><label>Password</label></th>
+            <td>
+              <input
+                type="password"
+                name="password"
+                required
+                placeholder="******"
+                oninvalid="setCustomValidity('password required')"
+                oninput="setCustomValidity('')"
+                autofocus
+              />
+            </td>
+          </tr>
+          <tr>
+            <th><label>Email</label></th>
+            <td>
+              <input type="email" name="email" />
+            </td>
+          </tr>
+          <tr>
+            <th><label>Contact Number</label></th>
+            <td>
+              <input type="tel" name="number" pattern="[0-9]{10}" />
+            </td>
+          </tr>
+          <tr>
+            <th><label>Gender:</label></th>
+            <td>
+              <label>Male</label
+              ><input type="radio" value="M" name="gender" checked />
+              <label>Female</label
+              ><input type="radio" value="F" name="gender" />
+            </td>
+          </tr>
+          <tr>
+            <th><label>Programming Languages:</label></th>
+            <td>
+              <label for="java">Java</label
+              ><input
+                type="checkbox"
+                value="Java"
+                id="java"
+                name="pl"
+                checked
+              />
+              <label for="c">C</label
+              ><input type="checkbox" value="C" id="c" name="pl" checked />
+              <label for="python">Python</label
+              ><input
+                type="checkbox"
+                value="Python"
+                id="python"
+                name="pl"
+                checked
+              />
+              <label for="javascript">JavaScript</label
+              ><input
+                type="checkbox"
+                value="JavaScript"
+                id="javascript"
+                name="pl"
+                checked
+              />
+              <label for="php">PHP</label
+              ><input type="checkbox" value="PHP" id="php" name="pl" checked />
+              <label for="c++">C++</label
+              ><input type="checkbox" value="C++" id="c++" name="pl" checked />
+            </td>
+          </tr>
+          <tr>
+            <th><label>Course Select:</label></th>
+            <td>
+              <select name="course" multiple size="3">
+                <option value="java core" selected>Java Core</option>
+                <option value="java advance">Java Advance</option>
+                <option value="servlet and jsp">Servlet and JSP</option>
+                <option value="spring and spring boot">
+                  Spring and Spring Boot
+                </option>
+                <option value="frontend">Frontend</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="citySelect">Select a City:</label></td>
+            <td>
+              <select name="ddcity" id="citySelect">
+                <optgroup label="Maharashtra">
+                  <option value="mumbai">Mumbai</option>
+                  <option value="pune">Pune</option>
+                </optgroup>
+                <optgroup label="Karnataka">
+                  <option value="bangalore">Bangalore</option>
+                  <option value="mysore">Mysore</option>
+                </optgroup>
+                <optgroup label="Tamil Nadu">
+                  <option value="chennai">Chennai</option>
+                  <option value="coimbatore">Coimbatore</option>
+                </optgroup>
+                <optgroup label="Delhi">
+                  <option value="new_delhi">New Delhi</option>
+                  <option value="noida">Noida</option>
+                </optgroup>
+                <optgroup label="Rajasthan">
+                  <option value="jaipur">Jaipur</option>
+                  <option value="udaipur">Udaipur</option>
+                </optgroup>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="dreamCompany">Dream Company</label></td>
+            <td>
+              <input type="text" name="dreamCompany" list="ds" />
+              <datalist id="ds">
+                <option value="Meta"></option>
+                <option value="Adobe"></option>
+                <option value="Google"></option>
+                <option value="Microsoft"></option>
+                <option value="Jp Morgan"></option>
+                <option value="Amazon"></option>
+              </datalist>
+            </td>
+          </tr>
+          <tr>
+            <td>Image</td>
+            <td>
+              <input
+                type="file"
+                name="img"
+                accept=".jpg,.png,.jpeg,.gif,.bmp"
+              />
+            </td>
+          </tr>
+          <tr>
+            <th>
+              <input type="submit" value="Submit" name="submit" />
+              <input
+                type="submit"
+                name="vsubmit"
+                value="vsubmit"
+                formnovalidate
+              />
+            </th>
+            <th><input type="reset" value="Reset" /></th>
+          </tr>
+        </table>
+      </form>
+    </fieldset>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: aqua;
+  border: 2px solid red;
+  height: 400px;
+  /* align-items: center; */
+}
+
+.container > * {
+  flex: 0 1 10%;
+  /* width: 10%; */
+  /* grow shrink basis */
+  border: 2px solid black;
+  text-align: center;
+}

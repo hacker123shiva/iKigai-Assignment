@@ -1,0 +1,51 @@
+/* pseudo class selector */
+/* li:first-child {
+  background-color: blue;
+} */
+
+/* li:last-child {
+  background-color: aquamarine;
+}
+
+p:first-child {
+  border: 2px solid red;
+  background-color: yellow;
+}
+
+p:nth-child(2n) {
+  background-color: darkslategrey;
+} */
+
+/* parent ka only child ho */
+/* li:only-child {
+} */
+
+/* only of type li */
+li:only-of-type {
+  background-color: azure;
+}
+
+/* For empty tag */
+:empty {
+  border: 2px solid red;
+}
+
+div p {
+  display: none;
+  background: red;
+}
+
+/* nesting selection */
+div:hover > p {
+  display: block;
+}
+
+/* hover effect */
+li:hover {
+  background-color: blanchedalmond;
+}
+
+/* target paragraph connected through anchor tag */
+p:target {
+  background-color: blueviolet;
+}

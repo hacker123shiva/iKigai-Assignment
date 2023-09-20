@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Design Example</title>
+    <style>
+      body {
+        background-color: grey;
+        padding-top: 2rem;
+        text-align: center;
+      }
+      div {
+        display: none;
+      }
+      @media (min-width: 1301px) {
+        body {
+          background-color: yellow;
+        }
+
+        #largescreen {
+          display: block;
+        }
+      }
+      @media (max-width: 1300px) and (min-width: 1001px) {
+        body {
+          background-color: red;
+        }
+
+        #normal {
+          display: block;
+        }
+      }
+
+      @media (max-width: 1000px) and (min-width: 501px) {
+        body {
+          background-color: green;
+        }
+
+        #tablet {
+          display: block;
+        }
+      }
+
+      @media (max-width: 500px) {
+        body {
+          background-color: brown;
+        }
+
+        #smartphone {
+          display: block;
+        }
+      }
+      @media (max-height: 500px) {
+        body {
+          background-color: cyan;
+        }
+        #landscape {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Responsive Design</h1>
+      <p>Using Media Queries</p>
+    </header>
+
+    <div class="container" id="largescreen">
+      <h2>Welcome to our largeScreen website!</h2>
+      <p>
+        This is an example of a simple responsive design using media queries.
+        Try resizing your browser window to see how the layout changes.
+      </p>
+    </div>
+    <div id="normal">
+      <h2>Welcome to our normalScreen website!</h2>
+      <p>
+        This is an example of a simple responsive design using media queries.
+        Try resizing your browser window to see how the layout changes.
+      </p>
+    </div>
+    <div id="tablet">
+      <h2>Welcome to our tabletScreen website!</h2>
+      <p>
+        This is an example of a simple responsive design using media queries.
+        Try resizing your browser window to see how the layout changes.
+      </p>
+    </div>
+    <div id="smartphone">
+      <h2>Welcome to our smartphone website!</h2>
+      <p>
+        This is an example of a simple responsive design using media queries.
+        Try resizing your browser window to see how the layout changes.
+      </p>
+    </div>
+    <div id="landscape">
+      <h2>Welcome to landscape website!</h2>
+      <p>
+        This is an example of a simple responsive design using media queries.
+        Try resizing your browser window to see how the layout changes.
+      </p>
+    </div>
+  </body>
+</html>

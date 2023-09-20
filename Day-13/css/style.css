@@ -1,0 +1,140 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); /* Divide into 12 columns */
+  grid-template-rows: repeat(12, 1fr); /* Divide into 11 rows */
+  height: 100vh;
+}
+
+.container > * {
+  background-color: aquamarine;
+  border: 2px solid black;
+}
+
+.header {
+  grid-column: 1 / span 12;
+  grid-row: 1 / span 2;
+  background-color: antiquewhite;
+  display: flex;
+  align-items: center;
+}
+
+.header img {
+  margin-left: 2%;
+  height: 70%;
+}
+
+.header .logo {
+  margin-left: 2%;
+}
+
+.header h1 {
+  margin: 0px;
+  padding: 0px;
+}
+
+.header h2 {
+  margin: 0px;
+  padding: 0px;
+}
+
+.header p {
+  margin: 0px;
+  margin-top: 2px;
+  padding: 0px;
+}
+
+.header a {
+  text-decoration: none;
+}
+
+.nav {
+  grid-column: 1 / span 12;
+  grid-row: 3 / span 1;
+  background-color: blueviolet;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: left;
+}
+
+.nav ul li {
+  margin-right: 4rem;
+  list-style-type: none;
+  flex-shrink: 1;
+  flex-grow: 0;
+}
+
+.nav ul li:last-child {
+  margin-left: 4rem;
+  flex-shrink: 2;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+}
+.aside1 {
+  grid-column: 1 / span 2;
+  grid-row: 4 / span 7;
+  background-color: cadetblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+}
+
+.aside1 li {
+  margin: 0px;
+  padding-right: 20px;
+  margin-top: 10px;
+  list-style-type: none;
+  border: 2px solid black;
+  text-align: center;
+}
+
+.aside1 li:first-child {
+  font-weight: bold;
+  font-size: larger;
+}
+.aside1 a {
+  text-decoration: none;
+}
+
+.main {
+  grid-column: 3 / span 7;
+  grid-row: 4 / span 7;
+  background-color: chocolate;
+}
+
+.main {
+  overflow-y: scroll;
+}
+.aside2 {
+  grid-column: 10 / span 3;
+  grid-row: 4 / span 7;
+  background-color: chartreuse;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aside2 .photo1 {
+  height: 40%;
+}
+.aside2 .photo2 {
+  height: 40%;
+}
+
+.aside2 img {
+  height: 140px;
+  width: 150px;
+}
+.footer {
+  grid-column: 1 / span 12;
+  grid-row: 11 / span 2;
+  background-color: darkturquoise;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

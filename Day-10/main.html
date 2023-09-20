@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/explain.css" />
+  </head>
+  <body>
+    <nav id="top-nav">
+      <img src="gla.png" alt="" />
+      <ul id="left">
+        <li><a href="#">Tutorial</a></li>
+        <li><a href="#">Exercises</a></li>
+        <li><a href="#">Get Certifies</a></li>
+        <li><a href="#">Services</a></li>
+      </ul>
+
+      <ul id="right">
+        <li><a href="#">Bootcamps</a></li>
+        <li><a href="#">Spaces</a></li>
+        <li><a href="#">Signup</a></li>
+      </ul>
+    </nav>
+    <div id="nav-bar">
+      <ul>
+        <li><a href="#">HTML</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">Javascript</a></li>
+        <li><a href="#">Sql</a></li>
+        <li><a href="#">Python</a></li>
+        <li><a href="#">Java</a></li>
+        <li><a href="#">Php</a></li>
+        <li><a href="#">C</a></li>
+        <li><a href="#">C++</a></li>
+        <li><a href="#">React</a></li>
+      </ul>
+    </div>
+    <div id="row">
+      <section id="right-section">
+        <ul>
+          <li>CSS Tutorial</li>
+          <li><a href="">CSS Home</a></li>
+          <li><a href="">CSS Introduction</a></li>
+          <li><a href="">CSS Syntax</a></li>
+          <li><a href="">CSS Selectors</a></li>
+          <li><a href="">CSS How To</a></li>
+          <li><a href="">CSS Comments</a></li>
+          <li><a href="">CSS Colors</a></li>
+          <li><a href="">CSS Background</a></li>
+          <li><a href="">CSS Borders</a></li>
+          <li><a href="">CSS Margins</a></li>
+          <li><a href="">CSS Padding</a></li>
+          <li><a href="">CSS Box Model</a></li>
+          <li><a href="">CSS Flexbox</a></li>
+          <li><a href="">CSS Grid</a></li>
+          <li><a href="">CSS Media Queries</a></li>
+          <li><a href="">CSS Transitions</a></li>
+          <li><a href="">CSS Animations</a></li>
+          <li><a href="">CSS Responsive Design</a></li>
+          <li><a href="">CSS Typography</a></li>
+          <li><a href="">CSS Positioning</a></li>
+          <li><a href="">CSS Pseudo-classes</a></li>
+          <li><a href="">CSS Pseudo-elements</a></li>
+          <li><a href="">CSS Variables</a></li>
+          <li><a href="">CSS BEM Methodology</a></li>
+          <li><a href="">CSS SASS/SCSS</a></li>
+          <li><a href="">CSS LESS</a></li>
+          <li><a href="">CSS Bootstrap</a></li>
+          <li><a href="">CSS Tailwind CSS</a></li>
+          <li><a href="">CSS Best Practices</a></li>
+          <li><a href="">CSS Debugging</a></li>
+        </ul>
+      </section>
+      <div id="home">
+        <p>
+          The <code>position</code> property specifies the type of positioning
+          method used for an element (static, relative, fixed, absolute, or
+          sticky).
+        </p>
+        <p>There are five different position values:</p>
+        <ul>
+          <li><code>static</code></li>
+          <li><code>relative</code></li>
+          <li><code>fixed</code></li>
+          <li><code>absolute</code></li>
+          <li><code>sticky</code></li>
+        </ul>
+        <p>
+          Elements are then positioned using the <code>top</code>,
+          <code>bottom</code>, <code>left</code>, and
+          <code>right</code> properties. However, these properties will not work
+          unless the <code>position</code> property is set first. They also work
+          differently depending on the position value.
+        </p>
+        <h3><code>position: static;</code></h3>
+        <p>
+          HTML elements are positioned <code>static</code> by default. Static
+          positioned elements are not affected by the <code>top</code>,
+          <code>bottom</code>, <code>left</code>, and
+          <code>right</code> properties.
+        </p>
+        <p>
+          An element with <code>position: static;</code> is not positioned in
+          any special way; it is always positioned according to the normal flow
+          of the page.
+        </p>
+
+        <h3><code>position: relative;</code></h3>
+        <p>
+          An element with <code>position: relative;</code> is positioned
+          relative to its normal position. Setting the <code>top</code>,
+          <code>right</code>, <code>bottom</code>, and
+          <code>left</code> properties of a relatively-positioned element will
+          cause it to be adjusted away from its normal position. Other content
+          will not be adjusted to fit into any gap left by the element.
+        </p>
+        <p>
+          This is often used to create subtle adjustments to an element's
+          position without affecting the layout of other elements. You can use
+          positive or negative values for the <code>top</code>,
+          <code>right</code>, <code>bottom</code>, and
+          <code>left</code> properties to move the element in various
+          directions.
+        </p>
+
+        <h3><code>position: fixed;</code></h3>
+        <p>
+          An element with <code>position: fixed;</code> is positioned relative
+          to the viewport, meaning it remains in the same place even when the
+          page is scrolled. This is commonly used for elements like navigation
+          bars, headers, or sidebars that you want to remain visible as the user
+          scrolls down the page.
+        </p>
+        <p>
+          By setting the <code>top</code>, <code>right</code>,
+          <code>bottom</code>, and <code>left</code> properties, you can
+          precisely position the fixed element on the screen. Remember that a
+          fixed element won't leave a gap in the layout, so be cautious when
+          using this property.
+        </p>
+
+        <h3><code>position: absolute;</code></h3>
+        <p>
+          An element with <code>position: absolute;</code> is positioned
+          relative to its nearest positioned ancestor. If no ancestor is
+          positioned, it's positioned relative to the body. Absolute positioning
+          is often used to create overlays, tooltips, or other elements that
+          should appear precisely at a specific location in relation to another
+          element.
+        </p>
+        <p>
+          By combining <code>position: absolute;</code> with the
+          <code>top</code>, <code>right</code>, <code>bottom</code>, and
+          <code>left</code> properties, you can control the exact placement of
+          the element. Keep in mind that absolute positioned elements are
+          removed from the normal document flow, so they can overlap other
+          elements.
+        </p>
+
+        <h3><code>position: sticky;</code></h3>
+        <p>
+          An element with <code>position: sticky;</code> behaves like
+          <code>position: relative;</code> until it reaches a certain scroll
+          position, then it "sticks" in place like
+          <code>position: fixed;</code>. This is useful for creating headers or
+          navigation bars that remain visible as long as they're on the screen.
+        </p>
+        <p>
+          Use the <code>top</code>, <code>right</code>, <code>bottom</code>, or
+          <code>left</code> properties along with a value to define when the
+          element becomes sticky. For instance, <code>top: 0;</code> would keep
+          the element stuck to the top of the viewport when it reaches the top
+          of the container.
+        </p>
+
+        <h3><code>position: relative;</code></h3>
+        <p>
+          An element with <code>position: relative;</code> is often used when
+          you want to make small adjustments to the positioning of an element
+          without disturbing the flow of surrounding content. You can use the
+          <code>top</code>, <code>right</code>, <code>bottom</code>, and
+          <code>left</code> properties to offset the element from its original
+          position. This is useful for creating effects like slightly shifting
+          an element upwards or to the right without impacting other elements.
+        </p>
+
+        <h3><code>position: fixed;</code></h3>
+        <p>
+          <code>position: fixed;</code> is commonly employed for creating
+          persistent elements, such as navigation menus or call-to-action
+          buttons, that remain visible as the user scrolls down the page. By
+          setting the <code>top</code>, <code>right</code>, <code>bottom</code>,
+          and <code>left</code> properties, you can determine the exact position
+          of the fixed element. Keep in mind that fixed elements are not
+          affected by scrolling and do not create gaps in the layout, so ensure
+          they don't obscure other important content.
+        </p>
+
+        <h3><code>position: absolute;</code></h3>
+        <p>
+          <code>position: absolute;</code> is used for creating elements that
+          need to be precisely positioned in relation to another element on the
+          page. This is useful for creating tooltips, modals, or overlays. The
+          key aspect of <code>position: absolute;</code> is that it's positioned
+          relative to its closest positioned ancestor. If there are no
+          positioned ancestors, the element is positioned relative to the
+          document body. You can use the <code>top</code>, <code>right</code>,
+          <code>bottom</code>, and <code>left</code> properties to control its
+          position and appearance.
+        </p>
+
+        <h3><code>position: sticky;</code></h3>
+        <p>
+          The <code>position: sticky;</code> property is particularly handy for
+          creating interactive and engaging user interfaces. It combines aspects
+          of both <code>position: relative;</code> and
+          <code>position: fixed;</code>. An element with
+          <code>position: sticky;</code> behaves as if it's relatively
+          positioned until the user scrolls past a specified offset, at which
+          point it "sticks" to a fixed position within its containing element or
+          the viewport. This can be utilized for creating elements like headers
+          that remain visible until they're scrolled out of view, enhancing
+          navigation and user experience.
+        </p>
+      </div>
+    </div>
+    <section id="footer">
+      <p>&copy; 2023 Skyline. All rights reserved.</p>
+    </section>
+  </body>
+</html>

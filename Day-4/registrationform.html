@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base href="www.gla.ac.in" />
+    <meta name="description" content="this is html tutorial" />
+    <meta name="keyword" content="html, css, javascript" />
+    <meta name="author" content="shiva" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="viewport" content="widht=device-width, intial-scale=1.0" />
+    <title>This is Registration form using html only</title>
+  </head>
+  <body bgcolor="lightgreen">
+    <font size="10">
+      <h1 align="center">Html Shiva registration form</h1>
+    </font>
+    <fieldset>
+      <legend align="center">
+        <hr size="5" />
+        <h1 align="center">Registration form</h1>
+        <hr size="5" />
+      </legend>
+
+      <form method="post" action="./controller/register">
+        <table align="center" border="2" width="30%">
+          <tr>
+            <th><label>UserId:</label></th>
+            <td>
+              <input type="text" name="userid" value="123xxx888x" readonly />
+            </td>
+          </tr>
+          <tr>
+            <th><label>Name:</label></th>
+            <td><input type="text" name="name" /></td>
+          </tr>
+          <tr>
+            <th><label>Email:</label></th>
+            <td>
+              <input
+                type="email"
+                name="email"
+                oninvalid="setCustomValidity('email required with valid formate')"
+                oninput="setCustomValidity('')"
+              />
+            </td>
+          </tr>
+          <tr>
+            <th><label>Mobile:</label></th>
+            <td><input type="tel" name="number" /></td>
+          </tr>
+          <tr>
+            <th><label>Course:</label></th>
+            <td>
+              <select name="course" multiple>
+                <option>Java Core</option>
+                <option>Java Advance</option>
+                <option>Servlet and JSP</option>
+                <option>Spring and Spring Boot</option>
+                <option>Frontend</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <th><label>Password:</label></th>
+            <td><input type="password" name="password" /></td>
+          </tr>
+
+          <tr>
+            <th><input type="submit" value="save" /></th>
+            <td><input type="reset" value="reset" /></td>
+          </tr>
+        </table>
+      </form>
+    </fieldset>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+.container {
+  border: 2px solid red;
+  text-align: center;
+  /* display:flex;
+  This is parent property show affect on child
+  */
+  display: flex;
+  /* justify-content: space-around; */
+  /* flex-wrap: wrap; */
+  /* align-items: stretch; */
+  height: 900px;
+  /* width: 800px; */
+  /* align-content: space-around; */
+  /* align-content: flex-start; */
+  /* row-gap: 1rem; */
+  /* column-gap: 1rem; */
+}
+
+.container > * {
+  background-color: blueviolet;
+  border: 2px solid green;
+  width: 100px;
+  height: 100px;
+  /* flex-grow: 1; */
+  flex-shrink: 1;
+  flex-basis: 100%;
+}
+
+.col1 {
+  flex-grow: 3;
+}

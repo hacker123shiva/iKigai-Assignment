@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./design.css" />
+  </head>
+  <body>
+    <h1 align="center">Simple Selector</h1>
+    <ul>
+      <li>Universal Selector(*)</li>
+      <li>Type Selector(input,h1)</li>
+      <li>Id Selector(#id)</li>
+      <li>Class Selector(.class)</li>
+    </ul>
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis,
+        repellat?
+      </p>
+      <p>Nam placeat ex ipsa eum voluptatem corporis qui fugiat dignissimos.</p>
+      <p>
+        Impedit numquam recusandae excepturi architecto corporis totam
+        voluptates omnis earum.
+      </p>
+    </div>
+
+    <ol id="list1">
+      <li>Lorem ipsum dolor sit amet.</li>
+      <li>Harum eos ipsam laboriosam eligendi!</li>
+      <li>Voluptas dignissimos omnis odit quam?</li>
+      <li>Mollitia sint quos nostrum. Architecto.</li>
+    </ol>
+
+    <p class="para-a" id="para1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+      provident ullam aspernatur corporis deleniti ducimus amet vel, corrupti
+      quod nulla, facere dignissimos nam nobis molestiae? Nostrum accusamus esse
+      amet, magni inventore possimus, cum minima commodi cupiditate aut fuga
+      doloremque ullam dolorum nam facere! Odio similique repellendus
+      architecto, excepturi atque sit.
+    </p>
+    <p class="para-b" id="para2">
+      Adipisci a repellendus facilis nemo debitis, inventore unde necessitatibus
+      perspiciatis aliquam. Consequatur reprehenderit nobis impedit cupiditate
+      consequuntur porro minima ipsum possimus soluta suscipit sequi dicta odio,
+      magnam odit hic quas ipsam ducimus illo vel asperiores! Voluptates unde
+      amet animi optio enim. A, architecto est aut nihil quas exercitationem
+      alias explicabo.
+    </p>
+    <p class="para-b" id="para3">
+      Quis cum quae quia, consectetur laborum maxime numquam distinctio mollitia
+      voluptatem id adipisci expedita fugit, a autem obcaecati ab sapiente in
+      blanditiis voluptate? Ipsa nostrum architecto quis delectus harum, rem
+      distinctio quos, doloribus cum, ullam debitis quibusdam eius itaque
+      voluptatum consequatur quisquam odit. Quidem repellendus ex reprehenderit
+      consectetur, commodi ipsa.
+    </p>
+    <p class="para-a" id="para4">
+      Labore enim laborum, qui voluptatum voluptatibus quaerat repellat quos
+      odio perspiciatis dolorum exercitationem, voluptates maxime deserunt modi
+      quidem velit consectetur dolor ullam, accusamus libero? Reprehenderit
+      molestiae recusandae neque magni voluptate esse ea adipisci optio
+      repudiandae, dolorem unde earum, dolores rerum temporibus amet hic
+      eligendi aperiam illo delectus! Officia, numquam ullam.
+    </p>
+
+    <h1 align="center">Combinators</h1>
+    <ul>
+      <li>Descedent Selector</li>
+      <li>Child Selector</li>
+      <li>General Sibling Selector</li>
+      <li>Alternate Sibling Selector</li>
+    </ul>
+    <div>
+      <p>
+        <span>Lorem, ipsum dolor.</span><span>Sit, impedit architecto.</span
+        ><span>Esse, laborum expedita.</span>
+      </p>
+      <p>
+        <span>Lorem, ipsum dolor.</span><span>Sit, non voluptas.</span
+        ><span>Suscipit, unde deleniti.</span>
+      </p>
+      <p>
+        <span>Lorem, ipsum dolor.</span><span>Atque, quasi est!</span
+        ><span>Dolores, assumenda reiciendis?</span>
+      </p>
+      <p>
+        <span>Lorem, ipsum dolor.</span><span>Laboriosam, soluta quod?</span
+        ><span>Dolorum, beatae libero.</span>
+      </p>
+    </div>
+
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet.
+        <a href="#">Shiva Srivastava</a>
+      </p>
+      <p>
+        Totam adipisci minus repellendus hic!
+        <a href="#">Harsh Srivastava</a>
+      </p>
+      <p>
+        Sit vitae adipisci obcaecati quasi.
+        <a href="#">Arsh Srivastava</a>
+      </p>
+    </div>
+
+    <div class="ancestor">
+      <p>This is a descendant</p>
+      <div>
+        My self Shiva
+        <p>This is also a descendant</p>
+      </div>
+    </div>
+
+    <ul class="parent">
+      <li>This is a direct child</li>
+      <li>
+        My name is Shiva
+        <span>This is child of li but not a direct child of ul</span>
+      </li>
+    </ul>
+
+    <ul>
+      <li>First item</li>
+      <li>Second item</li>
+      <li class="target">Target item</li>
+      <li>Other item</li>
+      <li>Last item</li>
+    </ul>
+
+    <ol>
+      <li>First</li>
+      <li class="alternate">Second</li>
+      <li>Third</li>
+      <li>Fourth</li>
+    </ol>
+    <label for="">Email</label>
+    <input type="email" name="email-check" id="email-id" class="email-class" />
+    <label for="mobile">Mobile</label>
+    <input type="number" id="mobile" class="my-mobile number" />
+    <label for="">text-input</label>
+    <input type="text" class="my-text box" />
+    <label for="image">Image</label>
+    <input
+      type="image"
+      src="https://wallpapercave.com/dwp1x/OrSDER2.jpg"
+      alt="cave-image show by web"
+    />
+    <input type="button" value="shiva" class="help button" />
+
+    <div>
+      <p class="para shiva">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam,
+        voluptas.
+      </p>
+    </div>
+
+    <p class="para-name">- base selection</p>
+    <div class="pre-parent">
+      <pre>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nulla nam et harum sapiente, suscipit maiores debitis fugit, fuga deserunt architecto aut incidunt temporibus rerum eligendi at, veniam recusandae nobis itaque mollitia sequi accusantium odit. Numquam quaerat fuga laboriosam velit cumque, animi esse dolore reiciendis, delectus voluptatem repellat vel architecto?</pre
+      >
+      <pre>
+Molestiae mollitia dolores atque excepturi accusamus repudiandae veniam aperiam voluptatem hic fuga saepe at eveniet nisi, blanditiis autem labore dolorem soluta repellat praesentium quis similique asperiores quas. Fugit sint recusandae illum, minus natus eos corporis ex hic rem tempore. Laudantium ipsam tempora atque numquam unde vitae aspernatur quas possimus cum.</pre
+      >
+      <pre>
+Necessitatibus ratione repellat inventore a sunt iusto at temporibus tempore? Ad, accusamus autem? Delectus voluptatum optio nemo suscipit quo quaerat nesciunt necessitatibus deserunt excepturi adipisci facilis, dolor veniam neque ea fugiat autem earum nobis in ducimus exercitationem iste expedita? Libero expedita nihil ipsum nostrum odio rerum, consequuntur quaerat modi voluptates.</pre
+      >
+      <pre>
+Neque fuga ut ab earum recusandae deserunt praesentium impedit aliquid sequi ducimus. Dolorum voluptate laudantium laborum impedit possimus ullam magnam suscipit omnis molestias consequuntur cum est ea saepe vero repellat doloremque, ex dicta expedita odit et? Laudantium cupiditate quam distinctio incidunt in nisi libero animi corporis, cumque a, assumenda veniam?</pre
+      >
+      <pre>
+Vel ducimus consequatur ipsam aut mollitia recusandae consequuntur, eligendi necessitatibus obcaecati, quod tempore eius! Nulla, perspiciatis at? Suscipit earum corrupti iure dolorum sunt quasi expedita dignissimos commodi optio assumenda nulla totam reprehenderit cupiditate, est ratione architecto asperiores. Fugiat distinctio asperiores accusantium nihil? Pariatur iusto ducimus amet suscipit fugit doloremque beatae!</pre
+      >
+    </div>
+  </body>
+</html>

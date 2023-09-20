@@ -1,0 +1,54 @@
+* {
+  padding: 2px;
+  color: red;
+}
+
+/*  whenever  select the field*/
+:focus {
+  background-color: green;
+}
+
+input:hover {
+  background-color: rgb(255, 127, 127);
+}
+
+input[type='checkbox']:checked {
+  box-shadow: 0px 0px 2px 2px green;
+}
+
+input[type='radio']:checked {
+  box-shadow: 0px 0px 5px 5px red;
+}
+
+:disabled {
+  border: 2px solid red;
+}
+
+:enabled {
+  border: 2px solid green;
+  box-shadow: 0px 0px 0px 2px yellow;
+}
+
+:required {
+  background-color: blue;
+}
+
+:read-only {
+  color: black;
+  background-color: aliceblue;
+}
+
+:in-range {
+  background-color: chartreuse;
+}
+:out-of-range {
+  background-color: brown;
+}
+
+input[type='email']:invalid {
+  background-color: gray;
+}
+
+:default {
+  background-color: goldenrod;
+}

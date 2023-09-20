@@ -1,0 +1,39 @@
+/* General sibling Selector*/
+p ~ a {
+  border-color: aqua;
+  color: red;
+}
+
+/* Alternate sibling selector */
+p + a {
+  border: 2px solid red;
+  text-decoration: none;
+  color: aquamarine;
+}
+
+/* Attribute Selector */
+
+/* Substring comprison */
+img[src*='http'] {
+  border: 3px solid black;
+}
+
+/* 
+start substring comprision */
+
+img[alt^='firstimg'] {
+  background-color: yellow;
+}
+
+/* Text  as according to end  */
+img[alt$='total'] {
+  background-color: blanchedalmond;
+}
+
+/*Exact word aage piche space ho  */
+img[alt~='offcourse'] {
+}
+
+/* before word - come */
+img[alt|='input'] {
+}

@@ -1,0 +1,18 @@
+.container {
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  display: grid;
+  /* grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr); */
+
+  /* grid-template-columns: 100px 100px;
+  grid-template-rows: 100px 100px 100px; */
+
+  grid-template: repeat(2, 100px) / (3, 1fr);
+}
+
+.container > * {
+  background-color: aquamarine;
+  color: red;
+  border: 2px solid black;
+}

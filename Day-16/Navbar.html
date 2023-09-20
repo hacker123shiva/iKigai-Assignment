@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- As a Link -->
+    <nav class="navbar bg-light">
+      <div class="container-fluid">
+        <a href="" class="navbar-brand">Brand Name</a>
+      </div>
+    </nav>
+
+    <!-- This is Heading  -->
+    <nav class="navbar bg-primary mt-3">
+      <div class="container-fluid">
+        <span class="navbar-brand h1">Brand Name</span>
+      </div>
+    </nav>
+
+    <!-- As a Image-->
+    <nav class="navbar bg-primary mt-3">
+      <div class="container-fluid">
+        <a href="" class="navbar-brand"
+          ><img src="gla.png" alt="" style="width: 40px"
+        /></a>
+      </div>
+    </nav>
+
+    <!-- 5.3 update  bg-body-tertiary-->
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid">
+        <a href="" class="navbar-brand">Brand Name</a>
+      </div>
+    </nav>
+
+    <!-- Navbar with toggler icon -->
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a href="" class="navbar-brand">Navbar</a>
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expands="false"
+          aria-labels="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="" class="nav-link active" aria-current="page">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link" aria-current="page">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link" aria-current="page">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link" aria-current="page">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link disabled" aria-current="page"
+                >Disabled</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Navbar without list -->
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a href="" class="navbar-brand">Navbar</a>
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav1"
+          aria-controls="navbarNav1"
+          aria-expands="false"
+          aria-labels="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav1">
+          <nav class="navbar-nav">
+            <a href="" class="nav-link active" aria-current="page">Home</a>
+
+            <a href="" class="nav-link" aria-current="page">About</a>
+
+            <a href="" class="nav-link" aria-current="page">Contact</a>
+
+            <a href="" class="nav-link" aria-current="page">Gallery</a>
+
+            <a href="" class="nav-link disabled" aria-current="page"
+              >Disabled</a
+            >
+          </nav>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Dropdown in Navbar -->
+
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a href="#" class="navbar-brand">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle Navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="#" class="nav-link active" aria-current="page">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                id="navbar-dropdown-link"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                data-bs-auto-close="outside"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbar-dropdown-link">
+                <li><a href="#" class="dropdown-item">Action</a></li>
+                <li><a href="#" class="dropdown-item">Another Action</a></li>
+                <li><a href="#" class="dropdown-item">Something Cool</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- nested dropdown -->
+
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a href="#" class="navbar-brand">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle Navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="#" class="nav-link active" aria-current="page">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                id="navbar-dropdown-link"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                data-bs-auto-close="outside"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbar-dropdown-link">
+                <li><a href="#" class="dropdown-item">Action</a></li>
+                <li><a href="#" class="dropdown-item">Another Action</a></li>
+                <li><a href="#" class="dropdown-item">Something Cool</a></li>
+                <li class="dropdown dropend">
+                  <a
+                    href="#"
+                    class="dropdown-item dropdown-toggle"
+                    id="navbar-dropdown-list-deep-1"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Nested Dropdown</a
+                  >
+                  <ul
+                    class="dropdown-menu dropdown-menu-end"
+                    aria-labelledby="navbar-dropdown-link"
+                  >
+                    <li><a href="#" class="dropdown-item">Action</a></li>
+                    <li>
+                      <a href="#" class="dropdown-item">Another Action</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-item">Something Cool</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

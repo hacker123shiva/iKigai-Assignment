@@ -1,0 +1,128 @@
+/* Universal Selector */
+* {
+  color: aqua;
+  background-color: rgb(117, 123, 111);
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* type  Selector */
+div {
+  border: 2px solid black;
+  background-color: burlywood;
+}
+
+h1 {
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+li {
+  text-align: justify;
+}
+
+/* Id selector */
+#list1 {
+  border: 2px solid black;
+  width: 40%;
+  background-color: cornsilk;
+}
+
+/* class selector */
+.para-a {
+  border: 2px dotted pink;
+  background-color: brown;
+  color: cadetblue;
+  text-align: start;
+}
+
+/* Combinators - descedent selector */
+ul li {
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Only Show the effect to span at any level of hierarchy */
+div p span {
+  font-family: jokerman;
+}
+
+/* Only show the effect to p at any level of hierachy */
+div p {
+  font-family: jokerman;
+}
+
+/* only show the effect to p of ancestor class at any level of hierarchy */
+.ancestor p {
+  color: blueviolet;
+}
+
+/* Child Selector show effect only to first generation of child */
+.parent > li {
+  font-weight: 100;
+  font-stretch: expanded;
+  color: red;
+}
+
+/* General Sibling Selector f */
+.target ~ li {
+  color: greenyellow;
+  font-family: jokerman;
+}
+
+.alternate + li {
+  color: cadetblue;
+  font-family: jokerman;
+}
+
+/* Attribute selector */
+/* exact selection */
+input[type='email'] {
+  border: 2px solid black;
+  width: 30%;
+  height: 100%;
+  background-color: aqua;
+}
+
+/* substring comprision */
+input[type*='num'] {
+  background-color: brown;
+}
+
+/* Start word searching */
+input[class^='my-text'] {
+  background-color: blanchedalmond;
+}
+
+/* last word searching */
+input[alt$='web'] {
+  border: 5px red black;
+  width: 50%;
+  height: 200px;
+}
+
+input[class$='button'] {
+  border: 2px solid red;
+  color: blueviolet;
+}
+
+/* Search according to word contain space either on starting or in end */
+p[class~='shiva'] {
+  border: 2 solid black;
+}
+
+/* Search according to - such that hyphen(-) come after word */
+p[class|='para'] {
+  border: 2px solid black;
+}
+
+/* Pseudo class selector */
+/* first child */
+pre:first-child {
+  background-color: brown;
+  color: rgb(255, 0, 174);
+}
+pre:last-child {
+  background-color: darkorange;
+}

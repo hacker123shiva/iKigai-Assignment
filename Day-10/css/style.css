@@ -1,0 +1,130 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: 0;
+}
+
+#logo {
+  background-color: blue;
+  float: left;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+#logo img {
+  width: 6em;
+  float: left;
+  margin-left: 1rem;
+}
+#logo h1 {
+  color: yellow;
+  margin-left: 8rem;
+  padding-top: 1rem;
+}
+
+#logo h2 {
+  color: white;
+  font-size: medium;
+  margin-left: 8rem;
+}
+
+#logo h3 {
+  color: white;
+  font-size: small;
+  margin-left: 8rem;
+}
+
+#logo ul li {
+  display: inline-block;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+li a {
+  color: white;
+  font-size: small;
+  text-decoration: none;
+}
+
+nav ul {
+  background-color: aquamarine;
+  float: left;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+nav ul li {
+  float: left;
+  list-style-type: none;
+  margin: 0.5rem;
+}
+nav ul li a {
+  color: blue;
+  text-decoration: none;
+}
+#content {
+  background-color: grey;
+  height: 100vh;
+}
+section {
+}
+section > ul {
+  float: left;
+  color: black;
+  height: 60vh;
+
+  margin-top: 0rem;
+  padding: 2rem;
+  padding-top: 0;
+}
+section ul li {
+  list-style-type: none;
+  margin-top: 0.2rem;
+  border: 2px solid black;
+  background-color: white;
+  padding-right: 4rem;
+}
+section ul li:first-child {
+  background-color: yellow;
+}
+section ul li:first-child label {
+  text-align: center;
+}
+section > ul > li > a {
+  text-decoration: none;
+  color: black;
+  font-style: normal;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+#faculty {
+  float: right;
+  margin-left: 2rem;
+  margin-right: 0.5rem;
+}
+#faculty div img {
+  width: 7rem;
+  height: 10rem;
+}
+
+#faculty div p {
+  text-align: center;
+  font-size: small;
+}
+hr {
+  border: none; /* Remove the default border */
+  border-top: 3px solid rgb(69, 56, 56); /* Set the new border style */
+  margin-bottom: 1rem; /* Add some spacing above and below the line */
+  width: 9rem;
+}
+#content p {
+  padding-top: 1rem;
+  padding-right: 0.5rem;
+  margin-right: 1rem;
+}
+
+#footer {
+  background-color: rgb(56, 53, 58);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
